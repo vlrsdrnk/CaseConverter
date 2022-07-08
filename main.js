@@ -32,7 +32,7 @@ let sentenceButton = document.getElementById("sentence-case");
 sentenceButton.addEventListener("click", function () {
     let text = document.querySelector("textarea");
     let array = text.value.toLowerCase().split(". ");
-    for (let i = 1; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         array[i] = array[i][0].toUpperCase() + array[i].slice(1);
     }
     text.value = array.join(". ");
